@@ -29,6 +29,14 @@ body h1 {
   color: #138073;
 }
 
+body #container {
+  width: 800px;
+}
+
+body #container #fname {
+  width: 800px;
+}
+
 body #hamburger {
   position: absolute;
   top: 5px;
@@ -83,9 +91,22 @@ body #hamburger #hamburgerBtn svg {
   stroke: white;
 }
 
+body button {
+  background-color: #138073;
+  color: white;
+}
+
 @media screen and (min-width: 375px) {
-  body {
-    background-color: #fbb03b;
+  body h1 {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  body #container {
+    width: 300px;
+  }
+  body #container #fname {
+    width: 300px;
   }
 }
 /*# sourceMappingURL=style.css.map */
