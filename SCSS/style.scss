@@ -3,7 +3,56 @@
 @import 'reset';
 
 body {
- background-color: $yellow;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: $yellow;
+
+ h1 {
+   color: $green;
+ }
+
+ #hamburger {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: flex-start;
+  width: 100vw;
+
+  #toggle {
+   background-color: $green!important;
+
+
+   #toggleText {
+    color: white!important;
+    }
+  } 
+
+  #hamburgerBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $green;
+    border-radius: 50%;
+    height: 55px;
+    width: 55px;
+    padding: 0;
+    margin: 10px;
+
+    &:focus{
+      box-shadow: none;
+    }
+
+    svg {
+      color: white;
+      stroke-width: 1; 
+      stroke: white;
+    }
+  }
+}
 
 }
 
